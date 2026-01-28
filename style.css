@@ -1,0 +1,114 @@
+/* Base */
+body {
+  margin:0;
+  font-family: 'Dancing Script', cursive;
+  overflow:hidden;
+  width:100vw;
+  height:100vh;
+  background:#330000;
+  color:white;
+  position:relative;
+}
+
+/* Screens */
+.screen {
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.hidden { display:none; }
+
+/* Intro Page */
+.intro-screen h1 {
+  font-family:'Playfair Display', serif;
+  font-size:6vw;
+  text-align:center;
+  color:#ffb6c1;
+  text-shadow:2px 2px 8px black;
+}
+
+/* Main Valentine Card */
+.valentine-card {
+  background: linear-gradient(135deg,#b3003b,#ff6fa3);
+  padding:50px 40px;
+  border-radius:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  text-align:center;
+  position:relative;
+  max-width:500px;
+}
+
+.card-text {
+  font-size:32px;
+  margin-bottom:25px;
+  text-shadow:2px 2px 4px black;
+}
+
+/* Buttons */
+button {
+  padding:12px 25px;
+  margin:10px;
+  font-size:18px;
+  border:none;
+  cursor:pointer;
+  border-radius:30px;
+  background: linear-gradient(45deg,#ff6fa3,#b3003b);
+  color:white;
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+button:hover {
+  transform:scale(1.1);
+  background: linear-gradient(45deg,#ffb6c1,#ff0000);
+}
+
+/* YES/NO Pages */
+.bear-img {
+  width:300px;
+  height:300px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.5);
+  margin-bottom:20px;
+}
+
+.message {
+  font-size:28px;
+  color:#ffb6c1;
+  margin-bottom:20px;
+  text-align:center;
+}
+
+/* Love Letter */
+.love-letter {
+  margin-top:20px;
+  max-width:600px;
+  background:#fff0f5;
+  color:#b3003b;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+  text-align:center;
+}
+
+/* Floating Hearts */
+#hearts span {
+  position:absolute;
+  font-size:18px;
+  animation: float 6s linear infinite;
+  pointer-events:none;
+}
+
+/* Animations */
+@keyframes float {
+  from {transform:translateY(100vh);}
+  to {transform:translateY(-10vh);}
+}

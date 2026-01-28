@@ -1,0 +1,26 @@
+{
+  "name": "valentines-letter",
+  "version": "1.0.0",
+  "description": "A vintage-style Valentine's Day letter in an envelope with interactive proposal",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "valentine",
+    "love",
+    "proposal",
+    "letter",
+    "envelope",
+    "vintage",
+    "interactive"
+  ],
+  "author": "Marilyn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "homepage": "index.html"
+}

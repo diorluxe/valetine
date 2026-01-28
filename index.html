@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Surprise</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+  <source src="love-song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- INTRO PAGE -->
+<div id="intro" class="screen intro-screen">
+  <h1>THE VALENTINE TIMES</h1>
+</div>
+
+<!-- MAIN VALENTINE CARD PAGE -->
+<div id="mainPage" class="screen hidden">
+  <div class="valentine-card">
+    <p class="card-text">Will you be my Valentine? 💌</p>
+    <div class="buttons">
+      <button id="yesBtn">Yes, I'd love</button>
+      <button id="noBtn">No, thank you</button>
+    </div>
+  </div>
+</div>
+
+<!-- YES PAGE -->
+<div id="yesPage" class="screen hidden">
+  <img src="myphoto.jpg.jpg" class="bear-img" id="flowerTrigger">
+  <h2 class="message">Click on the flower to get a gift 🌸</h2>
+  <div id="loveLetter" class="love-letter hidden">
+    I've been thinking about how lucky I am to have you, even with all the distance between us. Your presence in my life means more than I always know how to say. I'm really grateful for the memories we've shared and the way we're there for each other, no matter the time or miles. I also want us to be able to talk things through better. I'd really love it if we could open up more and try to understand each other whenever there's a misunderstanding instead of just letting things end. What we have means a lot to me, and I honestly hope that no matter where life takes us, we'll always find our way back to each other and stay close.
+  </div>
+</div>
+
+<!-- NO PAGE -->
+<div id="noPage" class="screen hidden">
+  <img src="picture.jpg.jpg" class="bear-img">
+  <h2 class="message">Please… you’ll like it 💕</h2>
+  <button id="backBtn">Go Back</button>
+</div>
+
+<!-- Floating Hearts -->
+<div id="hearts"></div>
+
+<!-- Confetti Canvas -->
+<canvas id="confettiCanvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
